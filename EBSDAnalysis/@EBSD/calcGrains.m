@@ -85,10 +85,10 @@ function [A_Db,A_Do] = doSegmentation(I_FD,ebsd,varargin)
 % segmentation 
 
 % extract segmentation method
-grainBoundaryCiterions = dir([mtex_path '/EBSDAnalysis/@EBSD/private/gbc*.m']);
-grainBoundaryCiterions = {grainBoundaryCiterions.name};
+grainBoundaryCriterions = dir([mtex_path '/EBSDAnalysis/@EBSD/private/gbc*.m']);
+grainBoundaryCriterions = {grainBoundaryCriterions.name};
 
-gbc      = get_flag(regexprep(grainBoundaryCiterions,'gbc_(\w*)\.m','$1'),varargin,'angle');
+gbc      = get_flag(regexprep(grainBoundaryCriterions,'gbc_(\w*)\.m','$1'),varargin,'angle');
 gbcValue = get_option(varargin,{gbc,'threshold'},15*degree,'double');
 
 if numel(gbcValue) == 1 && length(ebsd.CSList) > 1
