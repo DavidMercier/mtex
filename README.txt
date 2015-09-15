@@ -8,8 +8,8 @@ MTEX is a MATLAB toolbox containing the following features
 - Analyze and visualize crystallographic geometries
 - Calculate with model ODFs
 - Import, analyze and visualize arbitrary diffraction data
-- Import, analyze and visualize arbitrary individuell orientation mesurements (EBSD)
-- Grain and missorientation analysis
+- Import, analyze and visualize arbitrary individual orientation mesurements (EBSD)
+- Grain and misorientation analysis
 - Recover orientation density functions (ODFs)
 - Calculate texture characteristics
 - Create publication ready plots
@@ -17,7 +17,7 @@ MTEX is a MATLAB toolbox containing the following features
 
 For an introduction, please have a look at the help first. If the
 toolbox is installed the help can be found in the MATLAB help window
-which can be opend by typing 'doc mtex'.
+which can be opened by typing 'doc mtex'.
 For installation instructions, you can also refer to the file INSTALL
 in this directory.
 
